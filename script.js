@@ -7,6 +7,16 @@ backgroundMusic.preload = 'none';
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.18;
 
+function stopBackgroundMusic(){
+  backgroundMusic.pause();
+  backgroundMusic.currentTime = 0;
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) stopBackgroundMusic();
+});
+window.addEventListener('pagehide', stopBackgroundMusic);
+
 envelope.addEventListener('click', () => {
   backgroundMusic.play().catch(() => {});
   envelope.classList.add('hidden');
