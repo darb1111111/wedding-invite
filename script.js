@@ -2,7 +2,13 @@
 // Clicking the envelope fades it out and unlocks scrolling on the page.
 const envelope = document.getElementById('envelope');
 const body = document.body;
+const backgroundMusic = new Audio('music/wedding-song.mp3');
+backgroundMusic.preload = 'none';
+backgroundMusic.loop = true;
+backgroundMusic.volume = 0.18;
+
 envelope.addEventListener('click', () => {
+  backgroundMusic.play().catch(() => {});
   envelope.classList.add('hidden');
   body.classList.remove('locked');
 }, { once: true });
