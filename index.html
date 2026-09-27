@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Мырзабек &amp; Айчүрөк · 31.10.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Jost:wght@400;500&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+<!-- ENVELOPE INTRO: click anywhere on it to reveal the invitation.
+     Text and names below can be edited freely. -->
+<div id="envelope">
+  <svg class="env-icon" viewBox="0 0 64 48" fill="none" stroke="currentColor" stroke-width="1.4">
+    <rect x="2" y="4" width="60" height="40" rx="2"/>
+    <path class="lid" d="M2 6l30 22L62 6"/>
+  </svg>
+  <div class="env-names">Бекмырза &amp; Азиза</div>
+  <div class="env-text">АЧУУ ҮЧҮН БАСЫҢЫЗ</div>
+</div>
+
+<div class="wrap">
+
+  <section class="hero reveal">
+    <!-- MAIN PHOTO: images/hero.jpg. The busy background around the
+         edges fades into clean white (matching the page) via the
+         .photo-frame wrapper in styles.css — no editing needed for that.
+         To swap the photo, replace images/hero.jpg with another file of
+         the same name, or change the src below. -->
+    <div class="photo-frame hero-frame stagger-child" style="--i:0">
+      <img class="photo" src="images/hero.jpg" alt="Мырзабек жана Айчүрөк">
+    </div>
+
+    <svg class="sprig stagger-child" style="--i:1" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.1">
+      <path d="M32 58V14"/>
+      <path d="M32 20c-8-4-14-2-18 4 6 4 13 2 18-4z"/>
+      <path d="M32 20c8-4 14-2 18 4-6 4-13 2-18-4z"/>
+      <path d="M32 32c-7-3-12-1-15 4 5 4 11 2 15-4z"/>
+      <path d="M32 32c7-3 12-1 15 4-5 4-11 2-15-4z"/>
+      <circle cx="32" cy="12" r="3.2"/>
+    </svg>
+    <div class="label stagger-child" style="--i:2">ҮЙЛӨНҮҮ ТОЮНА ЧАКЫРУУ</div>
+    <!-- EDIT: names of the bride and groom -->
+    <div class="names stagger-child" style="--i:3">
+      Бекмырза
+      <span class="amp">&amp;</span>
+      Азиза
+    </div>
+    <!-- EDIT: wedding date shown here -->
+    <div class="date-line stagger-child" style="--i:4">31 · 10 · 2026</div>
+  </section>
+
+  <section class="greeting reveal">
+    <div class="label stagger-child" style="--i:0; margin-bottom:18px;">УРМАТТУУ КОНОКТОР</div>
+    <!-- EDIT: greeting / invitation text -->
+    <p class="stagger-child" style="--i:1">Балдарыбыз баш кошкон кубанычтуу күнгө арналган салтанаттуу кечебизге келип, кадырлуу коногубуз болууга сиздерди чын жүрөктөн чакырабыз.</p>
+    <!-- EDIT: parents' names -->
+    <div class="parents stagger-child" style="--i:2">
+      Той ээлери
+      <span>Айдарбек &amp; Айнура</span>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <!-- EDIT: wedding date text -->
+    <div class="big-date stagger-child" style="--i:0">
+      31 октябрь
+      <small>2026 · ИШЕМБИ</small>
+    </div>
+    <!-- EDIT: start time text -->
+    <div class="time stagger-child" style="--i:1">16:00</div>
+
+    <!-- MINI CALENDAR: shows the month with the wedding day marked by a
+         heart. EDIT: change "cal-month"/"cal-year" text for a different
+         month, and move class="day marked" to a different <span> to mark
+         a different date. Empty cells (class="day empty") just pad the
+         start of the month to the right weekday column. -->
+    <div class="calendar stagger-child" style="--i:2">
+      <div class="cal-month">Октябрь</div>
+      <div class="cal-year">2026</div>
+      <div class="cal-grid">
+        <span class="dow">Дш</span><span class="dow">Шш</span><span class="dow">Шр</span>
+        <span class="dow">Бш</span><span class="dow">Жм</span><span class="dow">Иш</span><span class="dow">Жк</span>
+        <span class="day empty"></span><span class="day empty"></span><span class="day empty"></span>
+        <span class="day">1</span><span class="day">2</span><span class="day">3</span><span class="day">4</span>
+        <span class="day">5</span><span class="day">6</span><span class="day">7</span><span class="day">8</span>
+        <span class="day">9</span><span class="day">10</span><span class="day">11</span>
+        <span class="day">12</span><span class="day">13</span><span class="day">14</span><span class="day">15</span>
+        <span class="day">16</span><span class="day">17</span><span class="day">18</span>
+        <span class="day">19</span><span class="day">20</span><span class="day">21</span><span class="day">22</span>
+        <span class="day">23</span><span class="day">24</span><span class="day">25</span>
+        <span class="day">26</span><span class="day">27</span><span class="day">28</span><span class="day">29</span>
+        <span class="day">30</span><span class="day marked">31</span>
+      </div>
+    </div>
+
+    <!-- COUNTDOWN: filled in by script.js. Change the target date/time
+         by editing the WEDDING_DATE constant at the top of script.js. -->
+    <div class="countdown stagger-child" style="--i:3" id="countdown">
+      <div class="cell"><span class="num" id="cd-days">00</span><span class="unit">күн</span></div>
+      <div class="cell"><span class="num" id="cd-hours">00</span><span class="unit">саат</span></div>
+      <div class="cell"><span class="num" id="cd-mins">00</span><span class="unit">мүнөт</span></div>
+      <div class="cell"><span class="num" id="cd-secs">00</span><span class="unit">секунд</span></div>
+    </div>
+
+    <!-- PHOTO under the countdown: images/table.jpg (your uploaded photo).
+         Same white-fade frame as the main photo. Swap the file to change it. -->
+    <div class="photo-frame mid-frame stagger-child" style="--i:4">
+      <img class="photo wide" src="images/table.jpg" alt="Той көрүнүшү">
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="label stagger-child" style="--i:0">ТОЙ ӨТҮҮЧҮ ЖАЙ</div>
+
+    <!-- VENUE PHOTO: images/venue.jpg (your uploaded photo). Same white
+         -fade frame as the other photos — swap the file to change it. -->
+    <div class="photo-frame mid-frame stagger-child" style="--i:1">
+      <img class="photo tall" src="images/venue.jpg" alt="Той өтүүчү жай">
+    </div>
+
+    <!-- EDIT: venue name and address -->
+    <div class="venue-name stagger-child" style="--i:2">«Ырыскы»</div>
+    <div class="venue-address stagger-child" style="--i:3">Бишкек ш., Фрунзе 160</div>
+  </section>
+
+  <section class="schedule reveal">
+    <div class="heading-wrap"><h2 class="stagger-child" style="--i:0">Кеченин программасы</h2></div>
+
+    <!-- TIMELINE: the curved line is drawn by script.js, which reads the
+         real position of each flower marker below and connects them with
+         a smooth curve — so it always lines up correctly no matter how
+         much text is in each item. It also "draws" progressively as you
+         scroll past this section, not all at once.
+         EDIT: add/remove <div class="t-item">...</div> blocks for more
+         or fewer schedule points; the line follows automatically. -->
+    <div class="timeline">
+      <svg class="timeline-line" id="timelineSvg">
+        <path id="timelinePath"/>
+      </svg>
+
+      <div class="t-item stagger-child" style="--i:1">
+        <span class="dot-flower">
+          <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3">
+            <circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/>
+            <path d="M12 9.6c-1.6-2-1.6-4.1 0-5.6 1.6 1.5 1.6 3.6 0 5.6z"/>
+            <path d="M12 14.4c1.6 2 1.6 4.1 0 5.6-1.6-1.5-1.6-3.6 0-5.6z"/>
+            <path d="M9.6 12c-2-1.6-4.1-1.6-5.6 0 1.5 1.6 3.6 1.6 5.6 0z"/>
+            <path d="M14.4 12c2-1.6 4.1-1.6 5.6 0-1.5 1.6-3.6 1.6-5.6 0z"/>
+          </g></svg>
+        </span>
+        <span class="what">Конокторду тосуу</span>
+        <span class="when">16:00</span>
+      </div>
+      <div class="t-item stagger-child" style="--i:2">
+        <span class="dot-flower">
+          <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3">
+            <circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/>
+            <path d="M12 9.6c-1.6-2-1.6-4.1 0-5.6 1.6 1.5 1.6 3.6 0 5.6z"/>
+            <path d="M12 14.4c1.6 2 1.6 4.1 0 5.6-1.6-1.5-1.6-3.6 0-5.6z"/>
+            <path d="M9.6 12c-2-1.6-4.1-1.6-5.6 0 1.5 1.6 3.6 1.6 5.6 0z"/>
+            <path d="M14.4 12c2-1.6 4.1-1.6 5.6 0-1.5 1.6-3.6 1.6-5.6 0z"/>
+          </g></svg>
+        </span>
+        <span class="what">Той салтанатынын башталышы</span>
+        <span class="when">17:00</span>
+      </div>
+      <div class="t-item stagger-child" style="--i:3">
+        <span class="dot-flower">
+          <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3">
+            <circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/>
+            <path d="M12 9.6c-1.6-2-1.6-4.1 0-5.6 1.6 1.5 1.6 3.6 0 5.6z"/>
+            <path d="M12 14.4c1.6 2 1.6 4.1 0 5.6-1.6-1.5-1.6-3.6 0-5.6z"/>
+            <path d="M9.6 12c-2-1.6-4.1-1.6-5.6 0 1.5 1.6 3.6 1.6 5.6 0z"/>
+            <path d="M14.4 12c2-1.6 4.1-1.6 5.6 0-1.5 1.6-3.6 1.6-5.6 0z"/>
+          </g></svg>
+        </span>
+        <span class="what">Майрамдык дасторкон</span>
+        <span class="when">18:00</span>
+      </div>
+      <div class="t-item stagger-child" style="--i:4">
+        <span class="dot-flower">
+          <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3">
+            <circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/>
+            <path d="M12 9.6c-1.6-2-1.6-4.1 0-5.6 1.6 1.5 1.6 3.6 0 5.6z"/>
+            <path d="M12 14.4c1.6 2 1.6 4.1 0 5.6-1.6-1.5-1.6-3.6 0-5.6z"/>
+            <path d="M9.6 12c-2-1.6-4.1-1.6-5.6 0 1.5 1.6 3.6 1.6 5.6 0z"/>
+            <path d="M14.4 12c2-1.6 4.1-1.6 5.6 0-1.5 1.6-3.6 1.6-5.6 0z"/>
+          </g></svg>
+        </span>
+        <span class="what">Майрамдык программа</span>
+        <span class="when">19:00</span>
+      </div>
+      <div class="t-item stagger-child" style="--i:5">
+        <span class="dot-flower">
+          <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.3">
+            <circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/>
+            <path d="M12 9.6c-1.6-2-1.6-4.1 0-5.6 1.6 1.5 1.6 3.6 0 5.6z"/>
+            <path d="M12 14.4c1.6 2 1.6 4.1 0 5.6-1.6-1.5-1.6-3.6 0-5.6z"/>
+            <path d="M9.6 12c-2-1.6-4.1-1.6-5.6 0 1.5 1.6 3.6 1.6 5.6 0z"/>
+            <path d="M14.4 12c2-1.6 4.1-1.6 5.6 0-1.5 1.6-3.6 1.6-5.6 0z"/>
+          </g></svg>
+        </span>
+        <span class="what">Кеченин аякташы</span>
+        <span class="when">22:00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO before the closing signature: images/closing.jpg (your
+       uploaded photo). It's set to bleed edge-to-edge across the full
+       screen width for a dramatic full-width moment, breaking out of
+       the centered .wrap on purpose — see .bleed-photo in styles.css. -->
+  <div class="bleed-photo reveal">
+    <img src="images/closing.jpg" alt="Той көрүнүшү">
+  </div>
+
+  <section class="closing reveal">
+    <svg class="sprig stagger-child" style="--i:0" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.1">
+      <path d="M32 58V14"/>
+      <path d="M32 20c-8-4-14-2-18 4 6 4 13 2 18-4z"/>
+      <path d="M32 20c8-4 14-2 18 4-6 4-13 2-18-4z"/>
+      <circle cx="32" cy="12" r="3.2"/>
+    </svg>
+    <div class="label stagger-child" style="--i:1">СҮЙҮҮ МЕНЕН</div>
+    <!-- EDIT: closing signature and date -->
+    <div class="signature stagger-child" style="--i:2">Бекмырза &amp; Азиза</div>
+    <div class="date-line stagger-child" style="--i:3">31.10.2026</div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
