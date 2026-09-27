@@ -5,19 +5,28 @@ const body = document.body;
 const backgroundMusic = new Audio('music/wedding-song.mp3');
 backgroundMusic.preload = 'none';
 backgroundMusic.loop = true;
-backgroundMusic.volume = 0.18;
+backgroundMusic.volume = 0.16;
+let musicStarted = false;
 
-function stopBackgroundMusic(){
+function pauseBackgroundMusic(){
   backgroundMusic.pause();
-  backgroundMusic.currentTime = 0;
+}
+
+function resumeBackgroundMusic(){
+  if (musicStarted && !document.hidden){
+    backgroundMusic.play().catch(() => {});
+  }
 }
 
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden) stopBackgroundMusic();
+  if (document.hidden) pauseBackgroundMusic();
+  else resumeBackgroundMusic();
 });
-window.addEventListener('pagehide', stopBackgroundMusic);
+window.addEventListener('pagehide', pauseBackgroundMusic);
+window.addEventListener('pageshow', resumeBackgroundMusic);
 
 envelope.addEventListener('click', () => {
+  musicStarted = true;
   backgroundMusic.play().catch(() => {});
   envelope.classList.add('hidden');
   body.classList.remove('locked');
