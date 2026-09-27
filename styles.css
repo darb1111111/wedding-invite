@@ -75,7 +75,7 @@ section:last-of-type{border-bottom:none;}
 .env-icon .lid{transform-origin:32px 20px;transition:transform 0.6s ease;}
 #envelope:hover .env-icon .lid{transform:rotateX(25deg);}
 .env-text{font-family:'Jost',sans-serif;font-size:0.78rem;letter-spacing:0.16em;color:var(--taupe);}
-.env-names{font-family:'Great Vibes',cursive;font-size:2.6rem;color:var(--ink);}
+.env-names{font-family:'Marck Script',cursive;font-size:2.6rem;color:var(--ink);}
 
 /* Hero */
 .hero{padding-top:0;padding-bottom:64px;}
@@ -106,8 +106,9 @@ section:last-of-type{border-bottom:none;}
 .photo.wide{aspect-ratio:4/3;}
 
 /* Names: elegant script font — edit font-family to swap it */
+
 .names{
-  font-family:'Great Vibes',cursive;
+  font-family:'Marck Script',cursive;
   font-weight:400;
   font-size:clamp(3.2rem,13vw,4.6rem);
   line-height:1.2;
@@ -236,7 +237,7 @@ h2{font-size:1.6rem;font-weight:400;font-style:italic;color:var(--ink);}
 /* Closing */
 .closing{padding-bottom:80px;}
 .closing .sprig{transform:scaleY(-1);}
-.signature{font-family:'Great Vibes',cursive;font-size:2.4rem;margin-top:12px;}
+.signature{font-family:'Marck Script',cursive;font-size:2.4rem;margin-top:12px;}
 .closing .date-line{margin-top:14px;}
 
 /* ── Full-bleed photo ── breaks out of the centered .wrap to span the
