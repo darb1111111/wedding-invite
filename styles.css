@@ -121,6 +121,24 @@ section:last-of-type{border-bottom:none;}
   margin-top:22px;font-family:'Jost',sans-serif;font-size:0.85rem;
   letter-spacing:0.22em;color:var(--ink);
 }
+.scroll-cue{
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  width:max-content;margin:38px auto 0;color:var(--taupe);
+  font-family:'Jost',sans-serif;font-size:0.62rem;font-weight:500;
+  letter-spacing:0.2em;text-decoration:none;
+}
+.scroll-cue-line{
+  display:block;width:1px;height:34px;background:var(--line);
+  transform:scaleY(0.25);transform-origin:top;
+  animation:scroll-cue-draw 1.8s cubic-bezier(.4,0,.2,1) infinite;
+}
+@keyframes scroll-cue-draw{
+  0%{transform:scaleY(0.25);opacity:.5;}
+  55%,100%{transform:scaleY(1);opacity:1;}
+}
+@media (prefers-reduced-motion:reduce){
+  .scroll-cue-line{transform:none;animation:none;}
+}
 
 /* Greeting */
 .greeting p{font-size:1.25rem;line-height:1.75;max-width:400px;margin:0 auto;}
